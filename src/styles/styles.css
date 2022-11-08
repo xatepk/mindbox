@@ -1,0 +1,22 @@
+.tasks {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  min-width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  background-color: rgb(225, 228, 231);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tasks__title {
+  color: rgb(186, 121, 173);
+  font-weight: 100;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+}

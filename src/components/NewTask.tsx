@@ -22,7 +22,7 @@ export default function NewTask(): JSX.Element {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input value={text} onChange={handleChange} />
+      <input value={text} onChange={handleChange} placeholder='What needs to be done' />
     </form>
   );
 }

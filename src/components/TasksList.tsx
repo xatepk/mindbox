@@ -2,8 +2,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { ITask } from "../models/models";
 import { RootState } from "../store";
 import { VisibilityFilter } from "../store/slices/filterSlice";
-import { setTodoStatus } from "../store/slices/tasksSlice";
+import { removeTodo, setTodoStatus } from "../store/slices/tasksSlice";
 import TaskItem from "./TaskItem";
+
+
 
 const getVisibleTodos = (todos: ITask[], filter: VisibilityFilter) => {
   switch (filter) {
@@ -29,7 +31,8 @@ export default function TasksList() {
       {todos.map((todo) => (
         <TaskItem key={todo.id}
         {...todo}
-        onClick={() => dispatch(setTodoStatus(todo))}/>
+        onClickComplete={() => dispatch(setTodoStatus({ completed: !todo.completed, id: todo.id }))}
+        onClickRemove={() => dispatch(removeTodo(todo.id))} />
       ))}
     </ul>
   );
