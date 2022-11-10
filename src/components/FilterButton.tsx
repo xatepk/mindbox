@@ -17,6 +17,7 @@ export default function FilterButton({
   );
   return (
     <button
+      className='tasks__filter'
       disabled={currentVisibilityFilter === visibilityFilter}
       onClick={() => dispatch(setVisibilityFilter(visibilityFilter))}
     >

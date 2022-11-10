@@ -27,7 +27,7 @@ export default function TasksList() {
   );
 
   return (
-    <ul>
+    <ul className='tasks__block tasks__list'>
       {todos.map((todo) => (
         <TaskItem key={todo.id}
         {...todo}

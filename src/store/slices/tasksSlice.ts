@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ITask } from '../../models/models';
+import { v4 as uuidv4 } from "uuid";
 
 const initialState = [] as ITask[];
 
@@ -13,9 +14,7 @@ const todoSlice = createSlice({
       },
       prepare: (description: string) => ({
         payload: {
-          id: Math.random()
-          .toString(36)
-          .substr(2, 9),
+          id: uuidv4(),
           description,
           completed: false,
         } as ITask,
