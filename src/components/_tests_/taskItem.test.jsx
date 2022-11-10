@@ -1,6 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import * as reduxHooks from 'react-redux';
-import { ITask } from "../../models/models";
 import * as actions from '../../store/slices/tasksSlice';
 
 import TaskItem from '../TaskItem';
