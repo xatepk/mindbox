@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mindbox/static/css/main.da3870d6.css",
+    "main.js": "/mindbox/static/js/main.366e32c6.js",
+    "static/media/HelveticaUltraLt.ttf": "/mindbox/static/media/HelveticaUltraLt.2473d8644ed753100869.ttf",
+    "static/media/checkbox-icon.svg": "/mindbox/static/media/checkbox-icon.73c15d7f6e899e93a971.svg",
+    "index.html": "/mindbox/index.html",
+    "main.da3870d6.css.map": "/mindbox/static/css/main.da3870d6.css.map",
+    "main.366e32c6.js.map": "/mindbox/static/js/main.366e32c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da3870d6.css",
+    "static/js/main.366e32c6.js"
+  ]
+}
