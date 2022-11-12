@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { addTodo } from "../store/slices/tasksSlice";
-import { useDispatch } from "react-redux";
+import { FormEvent, useState } from 'react';
+import { addTodo } from '../store/slices/tasksSlice';
+import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function NewTask(): JSX.Element {
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ export default function NewTask(): JSX.Element {
     setText(e.target.value);
   }
 
-  function handleSubmit(e: any) {
+  function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
     if (!text.trim()) {
@@ -23,9 +23,14 @@ export default function NewTask(): JSX.Element {
   }
 
   return (
-    <form onSubmit={handleSubmit} className='tasks__block tasks__item'>
-      <FontAwesomeIcon icon={faChevronDown} className='tasks__icon' />
-      <input className='tasks__new-item' value={text} onChange={handleChange} placeholder='What needs to be done'  />
+    <form onSubmit={handleSubmit} className="tasks__block tasks__item">
+      <FontAwesomeIcon icon={faChevronDown} className="tasks__icon" />
+      <input
+        className="tasks__new-item"
+        value={text}
+        onChange={handleChange}
+        placeholder="What needs to be done"
+      />
     </form>
   );
 }
