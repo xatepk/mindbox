@@ -30,7 +30,7 @@
 
 **GitHubPages**
 
-* [Ссылка на страницу](https://xatepk.github.io/mesto-react/)
+* [Ссылка на страницу](https://xatepk.github.io/mindbox/)
 
 **Планы**
 
